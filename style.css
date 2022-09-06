@@ -1,0 +1,269 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.content {
+    width: 100vw;
+    color: white;
+    z-index: 99;
+    position: absolute;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+a {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+a.nav-link {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    transition: ease-in-out 4s;
+}
+
+a:hover.nav-link {
+    color: var(--bs-secondary);
+}
+
+a.nav-link::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background: var(--bs-secondary);
+    transition: transform 0.5s ease-in-out;
+    transform: scale(0);
+}
+
+a:hover.nav-link::after {
+    transform: scale(1);
+}
+
+.icon {
+    color: var(--bs-secondary);
+}
+
+a:hover.icon {
+    color: var(--bs-secondary);
+}
+
+a {
+    font-family: 'Literata', serif;
+    font-weight: bold;
+}
+
+.orange {
+    background-color: #ff7b25;
+    color: black;
+}
+
+.gray {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+.space-gray {
+    background-color: #f2f2f210;
+    color: white;
+}
+
+.space {
+    background-color: #00000000;
+    color: white !important;
+}
+
+.space-icon {
+    color: #ffffff;
+}
+
+a:hover.space-icon {
+    color: #ffffff;
+}
+
+a.nav-link.space-nav-link {
+    color: #ffffff !important;
+}
+
+a:hover.nav-link.space-nav-link {
+    color: #ffffff !important;
+}
+
+a.nav-link.space-nav-link::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background: #ffffff !important;
+    transition: transform 0.5s ease-in-out;
+    transform: scale(0);
+}
+
+a:hover.nav-link.space-nav-link::after {
+    transform: scale(1);
+}
+
+.white {
+    background-color: white;
+    color: black
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: black;
+}
+
+.card-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 37px;
+    line-height: 120%;
+}
+
+.card-small {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 85%;
+}
+
+.card-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 23px;
+}
+
+.impact {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 110px;
+    line-height: 137px;
+    text-align: left;
+}
+
+.impact-lite {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 100px;
+    text-align: left;
+}
+
+#homem {
+    width: 500px;
+}
+
+.button {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.left {
+    text-align: left;
+}
+
+#maior::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 26px;
+    background: var(--bs-secondary);
+    transition: transform 0.5s ease-in-out;
+    animation-name: enfatizar;
+    animation-duration: 2s;
+    background-color: #ff7b25;
+}
+
+@keyframes enfatizar {
+    from {
+        transform: scaleX(0);
+    }
+
+    to {
+        transform: scaleX(1);
+    }
+}
+
+.b-border {
+    border-color: var(--bs-secondary);
+    border-style: solid;
+    border-width: 0px;
+    border-bottom-width: 5px;
+}
+
+.special {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    /*text-decoration: underline;*/
+}
+
+.figure {
+    width: 500px;
+}
+
+@media (max-width: 1400px) {
+    .impact {
+        font-size: 95px;
+        line-height: 117px;
+    }
+
+    .impact-lite {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 550px) {
+    .impact {
+        text-align: center;
+        font-size: 70px;
+        line-height: 97px;
+    }
+
+    .impact-lite {
+        text-align: center;
+        font-size: 50px;
+    }
+
+    #homem {
+        width: 300px;
+    }
+
+    .left {
+        text-align: center;
+    }
+
+    .figure {
+        width: 250px;
+    }
+}
